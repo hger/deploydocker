@@ -1,0 +1,12 @@
+[Unit]
+Description=daproxy container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a daproxy
+ExecStop=/usr/bin/docker stop -t 2 daproxy
+
+[Install]
+WantedBy=default.target

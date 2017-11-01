@@ -1,0 +1,12 @@
+[Unit]
+Description=Template container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a template
+ExecStop=/usr/bin/docker stop -t 2 template
+
+[Install]
+WantedBy=default.target
