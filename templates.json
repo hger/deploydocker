@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Jira",
+    "description": "Empty jira",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/b/bf/JIRA_logo.svg",
+    "image": "jira:latest",
+    "registry": "my.registry.com",
+    "ports": [
+      "8080/tcp"
+    ],
+    "volumes": ["/var/atlassian"]
+  },
+  {
+    "title": "Confluence",
+    "description": "Empty Confluence",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/1/1b/Atlassian_Confluence_Logo.svg",
+    "image": "confluence:latest",
+    "registry": "my.registry.com",
+    "ports": [
+      "8090/tcp"
+    ],
+    "volumes": ["/var/atlassian"]
+  },
+  {
+    "title": "Drupal",
+    "description": "Open-source content management framework",
+    "logo": "https://cloudinovasi.id/assets/img/logos/drupal.png",
+    "image": "drupal:latest",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/var/www/html"]
+  },
+  {
+    "title": "Just php7",
+    "description": "apache and php",
+    "logo": "http://php.net//images/logos/php-med-trans-light.gif",
+    "image": "php:apache",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/var/www/html"]
+  }
+]
+
